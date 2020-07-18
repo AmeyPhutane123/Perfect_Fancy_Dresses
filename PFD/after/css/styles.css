@@ -1,0 +1,314 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: pink;
+  font-family: 'Oxygen', sans-serif;
+}
+#header-nav {
+	background: #FF1493;
+	border-radius: 0;
+	border: 0;
+}
+#logo-img{
+	background:url(logo.png);
+	width: 200px;
+	height: 200px;
+	margin: 0px 0px 0px 0px;
+}
+#logo_small-img{
+	background:url(logo_small.png);
+	width: 100px;
+	height: 100px;
+	margin: 0px 0px 0px 0px;
+}
+.navbar-brand{
+	padding-top: 10px;
+}
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	color: #000000;/* black*/
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.5;
+}
+.navbar-brand a:hover,.navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p{
+	font-family: italic;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-top: 15px;
+}
+.navbar-brand p span{
+	vertical-align: middle;/* to it should allign at the centre of the star image*/
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a{
+	color: #000000;
+	text-align: center;
+}
+#nav-list a:hover{
+	background:#E7E7E7;
+
+}
+#nav-list a span{
+	font-size: 1.5em;
+}
+#phone a{
+	padding-top: auto;
+	font-weight: bold;
+	font-family: italic;
+	text-align: right;
+	padding-bottom: 0;
+}
+#phone div{
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: italic;
+	color: #000000;
+	text-align: right;
+	padding-right: 15px;
+}
+
+
+#xs-deliver{
+	padding-top: 10px;
+	text-align: center;
+	padding-left: 35px;
+		font:italic;
+		color: #000000;
+		border: 2px solid white;
+	}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+ border: 1px solid black;
+}
+.navbar-header button.navbar-toggle{
+	clear:both;
+}
+/* End Home Page */
+.category-tile{
+	position: relative;
+	border: 2px solid #FF1493;
+	overflow: hidden;/* so picture will be cliped*/
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+.category-tile  span{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.6;
+}
+.category-tile:hover{
+	box-shadow: 0 1px 5px 10px #FF1493;
+}
+
+#menu-categories-title + div{
+	margin-bottom: 50px;
+}
+
+.menu-item-tile{
+	margin-bottom: 25px;
+}
+.menu-item-tile .menu-item-price{
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+.menu-item-tile .menu-item-price{
+	font-size: 0.6em;
+}
+.menu-item-photo{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+.menu-item-photo div{
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: #557c3e;
+	text-align: center;
+}
+.menu-itme-description{
+	padding-right:30px; 
+}
+h3.menu-item-title{
+	margin: 0 0 10px;
+}
+.menu-item-details{
+	font-size: 0.9em;
+	font-style: italic;
+}
+	
+/* Meny categories Page */
+
+#menu-tile ,#specials-tile,#map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;/* it will set up sojmething as anchor for rest of the child elements.*/
+	border: 2px solid #FF1493;
+	overflow: hidden;
+	border-radius: 10px; 
+
+}
+#menu-tile:hover ,#specials-tile:hover,#map-tile:hover{
+	box-shadow: 0 1px 5px 10px #FF1493;
+}
+#menu-tile{
+	background: url('../images/menu-tile.jpg') no-repeat;
+	background-position: center;
+}
+#specials-tile{
+	background: url('../images/images.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span ,#map-tile span{
+	position: absolute;/* i.e - positioning of spans with the contianing*/
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .6;
+}
+@media (min-width: 1200px){
+	.container .jumbotron {
+
+    background: url('../images/fancy_ladies.jpg') no-repeat center;
+    height: 600px;
+	    box-shadow: 20 0 50px #3F0C1F;
+
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+#logo-img{
+	background:url(logo_small.png);
+	width: 100px;
+	height: 100px;
+	margin: 0px 0px 0px 0px;
+
+}/* targetting the medium devices */
+.container .jumbotron {
+    background: url('../images/fancy_ladies.jpg') no-repeat center;
+    height: 600px;
+	    box-shadow: 0 0 50px #3F0C1F;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+#logo-img{
+	background:url(logo_small.png);
+	width: 100px;
+	height: 100px;
+	margin: 0px 100px 0px -45px;
+}
+.container .jumbotron {
+    background: url('../images/fancy_ladies.jpg') no-repeat center;
+    height: 550px;
+	box-shadow: 0 0 50px #3F0C1F;
+  }
+  }
+
+@media (max-width: 767px){
+	.navbar-brand  {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 5vw; /* i.e - 5 percent of viewport width*/
+		/* so it too be responsive*/
+	}
+	.navbar-brand p{
+		text-transform: uppercase;
+		font-size: .6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img{
+		height: 20px;
+	}
+	.container .jumbotron {
+	    background: url('../images/fancy_ladies_resized.jpg') no-repeat center;
+	    height: auto;
+	    box-shadow: 0 0 50px #3F0C1F;
+  	}
+  	.menu-item-photo{
+  		margin-right: auto;
+  	}
+  	.menu-item-tile .menu-item-photo .menu-item-description{
+  		text-align: center;
+  	}
+  	
+}	
+@media(max-width: 479px){
+	.navbar-brand h1{
+		.padding-top: 5px;
+		font-size: 5.6vw;
+	}
+	.col-xxs-12{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%;
+	}
+}
+
+/* FOOTER */
+.panel-footer {
+	text-align: center;
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+.panel-footer section hr{
+	width: 50%;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.4em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
