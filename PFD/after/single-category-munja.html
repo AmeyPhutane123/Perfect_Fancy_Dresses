@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfect Fancy Dresses</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <nav id = "header-nav" class = "navbar navbar-default"> 
+      <div class = "container">
+        <div class="navbar-header">
+        <a href="index.html" class="pull-left -sm  visible-md visible-lg"><!-- float , only to be displayed when size is medium or large-->
+          <div id = "logo-img" alt="Logo image"></div>
+        </a>
+        <a href="index.html" class="pull-left visible-xs" style="padding-top: 20px; padding-left:  20px;padding-right: 20px;"><!-- float , only to be displayed when size is medium or large-->
+          <div id = "logo_small-img" alt="Logo image"></div>
+        </a>
+        <div class="navbar-brand">
+          <a href="index.html"><h1>Perfect Fancy Dresses</h1></a>
+          <p>
+            <img src="images/star-k-logo.png" alt="Kosher certification">
+            <span>At your Service</span>
+          </p>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle = "collapse" data-target="#collapsable-nav" aria-expanded = "false">
+          <!-- navbar-toggle controling the whole positioning of the button- . it will display only when its less than mediumm-->
+          <span class="sr-only" > Toggle navigation </span><!-- for screen reader only-->
+          <span class="icon-bar"></span><!-- i.e - putting those hhorizontal lines inside of the button. -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+        <!-- Id will tell where to target its collapsive type of functionality.-->
+           <ul id="nav-list" class="nav navbar-nav navbar-right"><!-- tells that they are going to be the components of the navigation bar, and navbar right tells to be pulled/floated to the right-->
+            <!-- now each li item is going to point to some particular site usually within the website-->
+            <li id="navHomeButton" class="visible-xs ">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li class="active" id="navMenuButton">
+              <a href="menu-categories.html" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-gift"></span><br class="hidden-xs"> Menu</a>
+                <!-- now this glif items are able to fix the icon font which is a vector based image which is able to behave like a font would behave we can size it color it.
+                  And hidden xs tells that when the screen size is extra small icon should go away.-->
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-sunglasses"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:9158401583"><!-- tell will trigger the phone to call-->
+                <span>9158401583</span></a><div>Always After Perfection</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+    </div>
+    </nav>
+  </header>
+  <div id="cll-btn" class="visible-xs" style="background-color: #FF1493; border: 2px solid white;  text-align: center; ">
+    <a class="btn" href="tel:9158401583" style="font-weight: bold;
+  font-size: 1.5em; text-align: center;
+  font-family: italic; padding-left: 30px;
+  color: #000000;">
+      <span  class="glyphicon glyphicon-earphone">
+        9158401583
+      </span>
+    </a>
+  </div>
+  <div id="xs-deliver" class=" visible-xs">Always After Perfection</div>
+  <!-- end of header -->
+
+  <div id="main_content" class="container">
+    <h2 style="color: #3F0C1F;"id="menu-categories-title" class="text-center">Category One</h2>
+    <div style="color: #3F0C1F;" class="text-center"> Speciality of category one<br><br><br>
+      <section class="row">
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>DO1</div>
+                <img src="images/menu/munja/munja_1.jpg" class="img-responsive" width="250" height="150" alt="Item">
+              </div>
+              <div class="menu-item-price"></div>10.95<span>(pint)</span>14.95<span>(quart)</span>
+            </div class="menu-item-description col-sm-7" >
+            <h3 class="menu-item-title" > Veel with mixed vegitables </h3>
+            <p menu-item-details > Beautiful and delicious</p>
+          </div>
+          <hr class="visible-xs">
+        </div>
+
+        
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>DO2</div>
+                <img src="images/menu/munja/munja_2.jpg" class="img-responsive" width="250" height="150" alt="Item">
+              </div>
+              <div class="menu-item-price"></div>10.95<span>(pint)</span>14.95<span>(quart)</span>
+            </div class="menu-item-description col-sm-7" >
+            <h3 class="menu-item-title" > Veel with mixed vegitables </h3>
+            <p menu-item-details > Beautiful and delicious</p>
+          </div>
+          <hr class="visible-xs">
+        </div>
+
+        <div class="clearfix visible-md-block visible-lg-block"></div><!-- inserting this cell after every second cell so that even if text overflows it wont affect our allignment.-->
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>DO3</div>
+                <img src="images/menu/munja/munja_3.jpg" class="img-responsive" width="250" height="150" alt="Item">
+              </div>
+              <div class="menu-item-price"></div>10.95<span>(pint)</span>14.95<span>(quart)</span>
+            </div class="menu-item-description col-sm-7" >
+            <h3 class="menu-item-title" > Veel with mixed vegitables </h3>
+            <p menu-item-details > Beautiful and delicious</p>
+          </div>
+          <hr class="visible-xs">
+        </div>
+
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>DO4</div>
+                <img src="images/menu/munja/munja_4.jpg" class="img-responsive" width="250" height="150" alt="Item">
+              </div>
+              <div class="menu-item-price"></div>10.95<span>(pint)</span>14.95<span>(quart)</span>
+            </div class="menu-item-description col-sm-7" >
+            <h3 class="menu-item-title" > Veel with mixed vegitables </h3>
+            <p menu-item-details > Beautiful and delicious</p>
+          </div>
+          <hr class="visible-xs">
+        </div>
+
+        <div class="clearfix visible-md-block visible-lg-block"></div>
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>DO5</div>
+                <img src="images/menu/munja/munja_5.jpg" class="img-responsive" width="250" height="150" alt="Item">
+              </div>
+              <div class="menu-item-price"></div>10.95<span>(pint)</span>14.95<span>(quart)</span>
+            </div class="menu-item-description col-sm-7" >
+            <h3 class="menu-item-title" > Veel with mixed vegitables </h3>
+            <p menu-item-details > Beautiful and delicious</p>
+          </div>
+          <hr class="visible-xs">
+        </div>
+
+
+
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>DO6</div>
+                <img src="images/fancy_ladies.jpg" class="img-responsive" width="250" height="150" alt="Item">
+              </div>
+              <div class="menu-item-price"></div>10.95<span>(pint)</span>14.95<span>(quart)</span>
+            </div class="menu-item-description col-sm-7" >
+            <h3 class="menu-item-title" > Veel with mixed vegitables </h3>
+            <p menu-item-details > Beautiful and delicious</p>
+          </div>
+          <hr class="visible-xs">
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+  </div><!-- end of main-content-->
+
+   <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun: 10:00m - 2:00pm<br>
+          Mon-Sat: 10:00am - 2:00pm ,4:00pm - 8:00pm<br>
+          <hr class="visible-xs"><!-- horizontal rule which is only gooing to show up when the screen size is extra small-->
+        </section>
+        
+
+
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          InFront of Police PetrolPump<br>
+          NanalPeth, Parbhani - 431401
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Fancy Dresses Dreppery Shop I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing clothes! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+
+      </div> 
+      <div class="text-center">&copy; Copyright Perfect Fancy Dresses 2020</div>
+    </div>
+  </footer>
+
+  
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>+ 
+</html>
