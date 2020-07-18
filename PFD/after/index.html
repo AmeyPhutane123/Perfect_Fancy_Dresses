@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfect Fancy Dresses</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <nav id = "header-nav" class = "navbar navbar-default"> 
+      <div class = "container">
+        <div class="navbar-header">
+        <a href="index.html" class="pull-left -sm  visible-md visible-lg"><!-- float , only to be displayed when size is medium or large-->
+          <div id = "logo-img" alt="Logo image"></div>
+        </a>
+        <a href="index.html" class="pull-left visible-xs" style="padding-top: 20px; padding-left:  20px;padding-right: 20px;"><!-- float , only to be displayed when size is medium or large-->
+          <div id = "logo_small-img" alt="Logo image"></div>
+        </a>
+        <div class="navbar-brand">
+          <a href="index.html"><h1>Perfect Fancy Dresses</h1></a>
+          <p>
+            <img src="images/star-k-logo.png" alt="Kosher certification">
+            <span>At your Service</span>
+          </p>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle = "collapse" data-target="#collapsable-nav" aria-expanded = "false">
+          <!-- navbar-toggle controling the whole positioning of the button- . it will display only when its less than mediumm-->
+          <span class="sr-only" > Toggle navigation </span><!-- for screen reader only-->
+          <span class="icon-bar"></span><!-- i.e - putting those hhorizontal lines inside of the button. -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+        <!-- Id will tell where to target its collapsive type of functionality.-->
+           <ul id="nav-list" class="nav navbar-nav navbar-right"><!-- tells that they are going to be the components of the navigation bar, and navbar right tells to be pulled/floated to the right-->
+            <!-- now each li item is going to point to some particular site usually within the website-->
+            
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="menu-categories.html" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-gift"></span><br class="hidden-xs"> Menu</a>
+                <!-- now this glif items are able to fix the icon font which is a vector based image which is able to behave like a font would behave we can size it color it.
+                  And hidden xs tells that when the screen size is extra small icon should go away.-->
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-sunglasses"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:9158401583"><!-- tell will trigger the phone to call-->
+                <span>9158401583</span></a><div>Always After Perfection</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+    </div>
+    </nav>
+  </header>
+  <div id="cll-btn" class="visible-xs" style="background-color: #FF1493; border: 2px solid white;  text-align: center; ">
+    <a class="btn" href="tel:9158401583" style="font-weight: bold;
+  font-size: 1.5em; text-align: center;
+  font-family: italic; padding-left: 30px;
+  color: #000000;">
+      <span  class="glyphicon glyphicon-earphone">
+        9158401583
+      </span>
+    </a>
+  </div>
+  <div id="xs-deliver" class=" visible-xs">Always After Perfection</div>
+
+  <div id="main_content" class="container">
+    <div class="jumbotron"><!-- we are going to assign a css property so that it to load image responsively--> 
+      <img src="images/fancy_ladies_400.jpg" alt=" Clothes pic" 
+      class="img-responsive visible-xs"><!-- due to this responcive tag image changes its size responsively in case of xs as we have defined it only in case of xs-->
+    </div>
+    <div id="home-tiles" class="row"></div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.htnl"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12"><!-- last one is for map-->
+        <a href="https://goo.gl/maps/dUTb1k45qHJWS88U7" target="_blank"><div id="map-tile">
+          <span>map</span>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.5585346428016!2d76.76836329999999!3d19.2721816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd0197f82067337%3A0x2fa310f88fc53542!2sPerfect%20Fancy%20Dresses!5e0!3m2!1sen!2sin!4v1591073162625!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div></a>
+      </div>
+  </div>
+
+  
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun: 10:00m - 2:00pm<br>
+          Mon-Sat: 10:00am - 2:00pm ,4:00pm - 8:00pm<br>
+          <hr class="visible-xs"><!-- horizontal rule which is only gooing to show up when the screen size is extra small-->
+        </section>
+        
+
+
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          InFront of Police PetrolPump<br>
+          NanalPeth, Parbhani - 431401
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Fancy Dresses Dreppery Shop I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing clothes! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+
+      </div>
+      <div class="text-center">&copy; Copyright Perfect Fancy Dresses 2020</div>
+    </div>
+  </footer>
+
+  
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>+ 
+</html>
